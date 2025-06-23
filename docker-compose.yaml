@@ -1,8 +1,8 @@
 services:
   health-check-api:
-    image:
+    build:
       context: .
-      build: dockerfile
+      dockerfile: dockerfile
     container_name: health-check-api
     ports:
       - "18100:80"
